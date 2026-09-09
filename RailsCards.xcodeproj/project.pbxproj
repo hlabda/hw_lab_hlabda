@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* RailsCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* RailsCardsApp.swift */; };
+		100000000000000000000002 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* Flashcard.swift */; };
+		100000000000000000000003 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* Deck.swift */; };
+		100000000000000000000004 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* CardViewModel.swift */; };
+		100000000000000000000005 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* CardView.swift */; };
+		100000000000000000000006 /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* DefinitionView.swift */; };
+		100000000000000000000007 /* DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* DeckTests.swift */; };
+		100000000000000000000008 /* CardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* CardViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = RailsCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* RailsCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailsCardsApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* DefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* DeckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckTests.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* CardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModelTests.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* RailsCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000A /* RailsCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailsCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		700000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				700000000000000000000002 /* RailsCards */,
+				700000000000000000000006 /* RailsCardsTests */,
+				700000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		700000000000000000000002 /* RailsCards */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* RailsCardsApp.swift */,
+				700000000000000000000003 /* Models */,
+				700000000000000000000004 /* ViewModels */,
+				700000000000000000000005 /* Views */,
+			);
+			path = RailsCards;
+			sourceTree = "<group>";
+		};
+		700000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000002 /* Flashcard.swift */,
+				200000000000000000000003 /* Deck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		700000000000000000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000004 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		700000000000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000005 /* CardView.swift */,
+				200000000000000000000006 /* DefinitionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		700000000000000000000006 /* RailsCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000007 /* DeckTests.swift */,
+				200000000000000000000008 /* CardViewModelTests.swift */,
+			);
+			path = RailsCardsTests;
+			sourceTree = "<group>";
+		};
+		700000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000009 /* RailsCards.app */,
+				20000000000000000000000A /* RailsCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* RailsCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000002 /* Build configuration list for PBXNativeTarget "RailsCards" */;
+			buildPhases = (
+				900000000000000000000001 /* Sources */,
+				600000000000000000000001 /* Frameworks */,
+				A00000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RailsCards;
+			productName = RailsCards;
+			productReference = 200000000000000000000009 /* RailsCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* RailsCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000003 /* Build configuration list for PBXNativeTarget "RailsCardsTests" */;
+			buildPhases = (
+				900000000000000000000002 /* Sources */,
+				600000000000000000000002 /* Frameworks */,
+				A00000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B00000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = RailsCardsTests;
+			productName = RailsCardsTests;
+			productReference = 20000000000000000000000A /* RailsCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					500000000000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					500000000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 500000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 800000000000000000000001 /* Build configuration list for PBXProject "RailsCards" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 700000000000000000000001;
+			productRefGroup = 700000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* RailsCards */,
+				500000000000000000000002 /* RailsCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* RailsCardsApp.swift in Sources */,
+				100000000000000000000002 /* Flashcard.swift in Sources */,
+				100000000000000000000003 /* Deck.swift in Sources */,
+				100000000000000000000004 /* CardViewModel.swift in Sources */,
+				100000000000000000000005 /* CardView.swift in Sources */,
+				100000000000000000000006 /* DefinitionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000007 /* DeckTests.swift in Sources */,
+				100000000000000000000008 /* CardViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 500000000000000000000001 /* RailsCards */;
+			targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RailsCards;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamad.RailsCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RailsCards;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamad.RailsCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamad.RailsCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailsCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailsCards";
+			};
+			name = Debug;
+		};
+		C00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamad.RailsCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailsCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailsCards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800000000000000000000001 /* Build configuration list for PBXProject "RailsCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000001 /* Debug */,
+				C00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800000000000000000000002 /* Build configuration list for PBXNativeTarget "RailsCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000003 /* Debug */,
+				C00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800000000000000000000003 /* Build configuration list for PBXNativeTarget "RailsCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000005 /* Debug */,
+				C00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400000000000000000000001 /* Project object */;
+}
