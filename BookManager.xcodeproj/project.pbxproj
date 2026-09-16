@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* BookManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* BookManagerApp.swift */; };
+		100000000000000000000002 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* Gender.swift */; };
+		100000000000000000000003 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* Book.swift */; };
+		100000000000000000000004 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* Library.swift */; };
+		100000000000000000000005 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* AppView.swift */; };
+		100000000000000000000006 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* LibraryView.swift */; };
+		100000000000000000000007 /* BookRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* BookRowView.swift */; };
+		100000000000000000000008 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* BookDetailView.swift */; };
+		100000000000000000000009 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* NewBookView.swift */; };
+		10000000000000000000000A /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000A /* ChartsView.swift */; };
+		10000000000000000000000B /* BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* BookTests.swift */; };
+		10000000000000000000000C /* LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* LibraryTests.swift */; };
+		10000000000000000000000D /* NewBookFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* NewBookFlowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = BookManager;
+		};
+		300000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = BookManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200000000000000000000001 /* BookManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManagerApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* BookRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRowView.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		20000000000000000000000B /* BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
+		20000000000000000000000C /* LibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTests.swift; sourceTree = "<group>"; };
+		20000000000000000000000D /* BookManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000E /* BookManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000F /* NewBookFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookFlowUITests.swift; sourceTree = "<group>"; };
+		200000000000000000000010 /* BookManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		600000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		600000000000000000000003 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		700000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				700000000000000000000002 /* BookManager */,
+				700000000000000000000006 /* BookManagerTests */,
+				700000000000000000000008 /* BookManagerUITests */,
+				700000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		700000000000000000000002 /* BookManager */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* BookManagerApp.swift */,
+				700000000000000000000003 /* Models */,
+				700000000000000000000004 /* ViewModels */,
+				700000000000000000000005 /* Views */,
+			);
+			path = BookManager;
+			sourceTree = "<group>";
+		};
+		700000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000002 /* Gender.swift */,
+				200000000000000000000003 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		700000000000000000000004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (200000000000000000000004 /* Library.swift */);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		700000000000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000005 /* AppView.swift */,
+				200000000000000000000006 /* LibraryView.swift */,
+				200000000000000000000007 /* BookRowView.swift */,
+				200000000000000000000008 /* BookDetailView.swift */,
+				200000000000000000000009 /* NewBookView.swift */,
+				20000000000000000000000A /* ChartsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		700000000000000000000006 /* BookManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000B /* BookTests.swift */,
+				20000000000000000000000C /* LibraryTests.swift */,
+			);
+			path = BookManagerTests;
+			sourceTree = "<group>";
+		};
+		700000000000000000000008 /* BookManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000F /* NewBookFlowUITests.swift */,
+			);
+			path = BookManagerUITests;
+			sourceTree = "<group>";
+		};
+		700000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000D /* BookManager.app */,
+				20000000000000000000000E /* BookManagerTests.xctest */,
+				200000000000000000000010 /* BookManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* BookManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000002 /* Build configuration list for PBXNativeTarget "BookManager" */;
+			buildPhases = (900000000000000000000001 /* Sources */, 600000000000000000000001 /* Frameworks */, A00000000000000000000001 /* Resources */);
+			buildRules = ();
+			dependencies = ();
+			name = BookManager;
+			productName = BookManager;
+			productReference = 20000000000000000000000D /* BookManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* BookManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000003 /* Build configuration list for PBXNativeTarget "BookManagerTests" */;
+			buildPhases = (900000000000000000000002 /* Sources */, 600000000000000000000002 /* Frameworks */, A00000000000000000000002 /* Resources */);
+			buildRules = ();
+			dependencies = (B00000000000000000000001 /* PBXTargetDependency */);
+			name = BookManagerTests;
+			productName = BookManagerTests;
+			productReference = 20000000000000000000000E /* BookManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		500000000000000000000003 /* BookManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000004 /* Build configuration list for PBXNativeTarget "BookManagerUITests" */;
+			buildPhases = (900000000000000000000003 /* Sources */, 600000000000000000000003 /* Frameworks */, A00000000000000000000003 /* Resources */);
+			buildRules = ();
+			dependencies = (B00000000000000000000002 /* PBXTargetDependency */);
+			name = BookManagerUITests;
+			productName = BookManagerUITests;
+			productReference = 200000000000000000000010 /* BookManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					500000000000000000000001 = {CreatedOnToolsVersion = 26.0;};
+					500000000000000000000002 = {CreatedOnToolsVersion = 26.0; TestTargetID = 500000000000000000000001;};
+					500000000000000000000003 = {CreatedOnToolsVersion = 26.0; TestTargetID = 500000000000000000000001;};
+				};
+			};
+			buildConfigurationList = 800000000000000000000001 /* Build configuration list for PBXProject "BookManager" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 700000000000000000000001;
+			productRefGroup = 700000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (500000000000000000000001 /* BookManager */, 500000000000000000000002 /* BookManagerTests */, 500000000000000000000003 /* BookManagerUITests */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* BookManagerApp.swift in Sources */,
+				100000000000000000000002 /* Gender.swift in Sources */,
+				100000000000000000000003 /* Book.swift in Sources */,
+				100000000000000000000004 /* Library.swift in Sources */,
+				100000000000000000000005 /* AppView.swift in Sources */,
+				100000000000000000000006 /* LibraryView.swift in Sources */,
+				100000000000000000000007 /* BookRowView.swift in Sources */,
+				100000000000000000000008 /* BookDetailView.swift in Sources */,
+				100000000000000000000009 /* NewBookView.swift in Sources */,
+				10000000000000000000000A /* ChartsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (10000000000000000000000B /* BookTests.swift in Sources */, 10000000000000000000000C /* LibraryTests.swift in Sources */);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (10000000000000000000000D /* NewBookFlowUITests.swift in Sources */);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00000000000000000000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 500000000000000000000001 /* BookManager */; targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */; };
+		B00000000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 500000000000000000000001 /* BookManager */; targetProxy = 300000000000000000000002 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug;};
+		C00000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule;}; name = Release;};
+		C00000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = BookManager; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.hamad.BookManager; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1;}; name = Debug;};
+		C00000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = BookManager; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.hamad.BookManager; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1;}; name = Release;};
+		C00000000000000000000005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.hamad.BookManagerTests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookManager";}; name = Debug;};
+		C00000000000000000000006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.hamad.BookManagerTests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookManager";}; name = Release;};
+		C00000000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.hamad.BookManagerUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = BookManager;}; name = Debug;};
+		C00000000000000000000008 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.hamad.BookManagerUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = BookManager;}; name = Release;};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800000000000000000000001 /* Build configuration list for PBXProject "BookManager" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000001 /* Debug */, C00000000000000000000002 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		800000000000000000000002 /* Build configuration list for PBXNativeTarget "BookManager" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000003 /* Debug */, C00000000000000000000004 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		800000000000000000000003 /* Build configuration list for PBXNativeTarget "BookManagerTests" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000005 /* Debug */, C00000000000000000000006 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		800000000000000000000004 /* Build configuration list for PBXNativeTarget "BookManagerUITests" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000007 /* Debug */, C00000000000000000000008 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400000000000000000000001 /* Project object */;
+}
