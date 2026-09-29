@@ -6,4 +6,4 @@ The app fetches the most-starred Swift repositories from the live GitHub search 
 
 Run Product > Test (Command-U) for the four required Swift Testing view model tests and the UI test covering live loading, case-insensitive search and GitHub navigation. GitHub requires internet access and may rate-limit requests. As specified by the lab, networking failures are printed and return an empty list.
 
-Submission screenshots are kept outside this repository and are submitted through Canvas separately. Earlier lab files inherited from the repository's default branch are preserved.
+Submission screenshots are kept outside this repository and are submitted through Canvas separately.
