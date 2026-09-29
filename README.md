@@ -1,22 +1,13 @@
-# TempConverterApp
+# Lab 05 SwiftRepos
 
-Completed SwiftUI solution for Lab02: TempConverter.
+Andrew ID: `hlabda`
 
-## Included requirements
+Branch: `hw_lab5_SwiftRepos`
 
-- MVC-style `Models`, `Controllers`, and `Views` groups
-- Celsius-to-Fahrenheit and Fahrenheit-to-Celsius conversion
-- Whole-number input and output, matching the lab formulas
-- Invalid-input and absolute-zero validation (`N/A` output)
-- Conversion-direction toggle
-- Styled SwiftUI interface
-- Original 1024 x 1024 AppIcon
-- Navigation-based information screen
+Open `SwiftRepos.xcodeproj` in Xcode, allow Swift Package Manager to resolve Alamofire, choose an iPhone simulator, and run the SwiftRepos scheme. The app targets iOS 17 or later.
 
-## Run the app
+The app fetches the most-starred Swift repositories from the live GitHub search API, shows names, descriptions and formatted star counts, filters names using a system search field, and opens each repository in a WKWebView within a NavigationStack.
 
-1. Open `TempConverterApp.xcodeproj` in Xcode.
-2. Choose any iPhone simulator.
-3. Press Run.
+Run Product > Test (Command-U) for the four required Swift Testing view model tests and the UI test covering live loading, case-insensitive search and GitHub navigation. GitHub requires internet access and may rate-limit requests. As specified by the lab, networking failures are printed and return an empty list.
 
-The app uses no external packages or services.
+Submission screenshots are kept outside this repository and are submitted through Canvas separately. Earlier lab files inherited from the repository's default branch are preserved.

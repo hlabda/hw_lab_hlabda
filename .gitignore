@@ -1,3 +1,9 @@
 .DS_Store
 xcuserdata/
 *.xcuserstate
+
+.DS_Store
+DerivedData/
+*.xcresult
+xcuserdata/
+Screenshots/

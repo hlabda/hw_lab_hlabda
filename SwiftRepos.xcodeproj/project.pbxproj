@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+        10000000000000000000000D = {isa = PBXBuildFile; fileRef = 20000000000000000000000D; };
+        10000000000000000000000E = {isa = PBXBuildFile; productRef = F00000000000000000000002; };
+		100000000000000000000001 /* SwiftReposApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* SwiftReposApp.swift */; };
+		100000000000000000000002 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* RepositoryViewModel.swift */; };
+		100000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* ContentView.swift */; };
+		100000000000000000000004 /* RepositoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* RepositoryRow.swift */; };
+		100000000000000000000005 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* Repository.swift */; };
+		100000000000000000000006 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* WebView.swift */; };
+		100000000000000000000007 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* Parser.swift */; };
+		100000000000000000000008 /* RepositoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* RepositoryViewModelTests.swift */; };
+		100000000000000000000009 /* SwiftReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* SwiftReposUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = SwiftRepos;
+		};
+		300000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 500000000000000000000001;
+			remoteInfo = SwiftRepos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+        20000000000000000000000D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		200000000000000000000001 /* SwiftReposApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReposApp.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* RepositoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRow.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* RepositoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModelTests.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* SwiftReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReposUITests.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* SwiftRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000B /* SwiftReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000C /* SwiftReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (10000000000000000000000E); runOnlyForDeploymentPostprocessing = 0; };
+		600000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		600000000000000000000003 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        700000000000000000000008 = {isa = PBXGroup; children = (200000000000000000000005, 200000000000000000000007, 20000000000000000000000D); path = Models; sourceTree = "<group>"; };
+		700000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				700000000000000000000002 /* SwiftRepos */,
+				700000000000000000000005 /* SwiftReposTests */,
+				700000000000000000000006 /* SwiftReposUITests */,
+				700000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		700000000000000000000002 /* SwiftRepos */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* SwiftReposApp.swift */,
+				700000000000000000000003 /* ViewModels */,
+                700000000000000000000008 /* Models */,
+				700000000000000000000004 /* Views */,
+			);
+			path = SwiftRepos;
+			sourceTree = "<group>";
+		};
+		700000000000000000000003 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000002 /* RepositoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		700000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000003 /* ContentView.swift */,
+				200000000000000000000004 /* RepositoryRow.swift */,
+				200000000000000000000006 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		700000000000000000000005 /* SwiftReposTests */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000008 /* RepositoryViewModelTests.swift */,
+			);
+			path = SwiftReposTests;
+			sourceTree = "<group>";
+		};
+		700000000000000000000006 /* SwiftReposUITests */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000009 /* SwiftReposUITests.swift */,
+			);
+			path = SwiftReposUITests;
+			sourceTree = "<group>";
+		};
+		700000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000A /* SwiftRepos.app */,
+				20000000000000000000000B /* SwiftReposTests.xctest */,
+				20000000000000000000000C /* SwiftReposUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* SwiftRepos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000002 /* Build configuration list for PBXNativeTarget "SwiftRepos" */;
+			buildPhases = (
+				900000000000000000000001 /* Sources */,
+				600000000000000000000001 /* Frameworks */,
+				A00000000000000000000001 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			packageProductDependencies = (F00000000000000000000002);
+            name = SwiftRepos;
+			productName = SwiftRepos;
+			productReference = 20000000000000000000000A /* SwiftRepos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		500000000000000000000002 /* SwiftReposTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000003 /* Build configuration list for PBXNativeTarget "SwiftReposTests" */;
+			buildPhases = (
+				900000000000000000000002 /* Sources */,
+				600000000000000000000002 /* Frameworks */,
+				A00000000000000000000002 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				B00000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = SwiftReposTests;
+			productName = SwiftReposTests;
+			productReference = 20000000000000000000000B /* SwiftReposTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		500000000000000000000003 /* SwiftReposUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000004 /* Build configuration list for PBXNativeTarget "SwiftReposUITests" */;
+			buildPhases = (
+				900000000000000000000003 /* Sources */,
+				600000000000000000000003 /* Frameworks */,
+				A00000000000000000000003 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				B00000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = SwiftReposUITests;
+			productName = SwiftReposUITests;
+			productReference = 20000000000000000000000C /* SwiftReposUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					500000000000000000000001 = {CreatedOnToolsVersion = 27.0;};
+					500000000000000000000002 = {CreatedOnToolsVersion = 27.0; TestTargetID = 500000000000000000000001;};
+					500000000000000000000003 = {CreatedOnToolsVersion = 27.0; TestTargetID = 500000000000000000000001;};
+				};
+			};
+			buildConfigurationList = 800000000000000000000001 /* Build configuration list for PBXProject "SwiftRepos" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 700000000000000000000001;
+			productRefGroup = 700000000000000000000007 /* Products */;
+			packageReferences = (F00000000000000000000001);
+            projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500000000000000000000001 /* SwiftRepos */,
+				500000000000000000000002 /* SwiftReposTests */,
+				500000000000000000000003 /* SwiftReposUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* SwiftReposApp.swift in Sources */,
+				100000000000000000000002 /* RepositoryViewModel.swift in Sources */,
+				100000000000000000000003 /* ContentView.swift in Sources */,
+				100000000000000000000004 /* RepositoryRow.swift in Sources */,
+				100000000000000000000005 /* Repository.swift in Sources */,
+				100000000000000000000006 /* WebView.swift in Sources */,
+				100000000000000000000007 /* Parser.swift in Sources */,
+                10000000000000000000000D /* Repositories.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000008 /* RepositoryViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000009 /* SwiftReposUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B00000000000000000000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 500000000000000000000001 /* SwiftRepos */; targetProxy = 300000000000000000000001 /* PBXContainerItemProxy */; };
+		B00000000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 500000000000000000000001 /* SwiftRepos */; targetProxy = 300000000000000000000002 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug;};
+		C00000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule;}; name = Release;};
+		C00000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = SwiftRepos; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SwiftRepos; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1;}; name = Debug;};
+		C00000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = SwiftRepos; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SwiftRepos; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1;}; name = Release;};
+		C00000000000000000000005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SwiftReposTests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRepos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftRepos";}; name = Debug;};
+		C00000000000000000000006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SwiftReposTests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRepos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftRepos";}; name = Release;};
+		C00000000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SwiftReposUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = SwiftRepos;}; name = Debug;};
+		C00000000000000000000008 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SwiftReposUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = SwiftRepos;}; name = Release;};
+/* End XCBuildConfiguration section */
+
+F00000000000000000000001 = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/Alamofire/Alamofire.git"; requirement = {kind = upToNextMajorVersion; minimumVersion = 5.10.0; }; };
+        F00000000000000000000002 = {isa = XCSwiftPackageProductDependency; package = F00000000000000000000001; productName = Alamofire; };
+/* Begin XCConfigurationList section */
+		800000000000000000000001 /* Build configuration list for PBXProject "SwiftRepos" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000001 /* Debug */, C00000000000000000000002 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		800000000000000000000002 /* Build configuration list for PBXNativeTarget "SwiftRepos" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000003 /* Debug */, C00000000000000000000004 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		800000000000000000000003 /* Build configuration list for PBXNativeTarget "SwiftReposTests" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000005 /* Debug */, C00000000000000000000006 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		800000000000000000000004 /* Build configuration list for PBXNativeTarget "SwiftReposUITests" */ = {isa = XCConfigurationList; buildConfigurations = (C00000000000000000000007 /* Debug */, C00000000000000000000008 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400000000000000000000001 /* Project object */;
+}
+
