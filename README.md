@@ -38,4 +38,4 @@ Verified on iPhone 17 Pro with iOS 26.5: **8 tests passed, 0 failed** (7 model t
 - Repository: <https://github.com/hlabda/hw_lab_hlabda>
 - Branch: `hw_lab6_SimpleContacts`
 - Lab branch: <https://github.com/hlabda/hw_lab_hlabda/tree/hw_lab6_SimpleContacts>
-- Screenshots: saved in the `Screenshots/` folder, with a separate ZIP prepared for Canvas.
+- Screenshots: kept locally and submitted separately through Canvas; excluded from GitHub.
