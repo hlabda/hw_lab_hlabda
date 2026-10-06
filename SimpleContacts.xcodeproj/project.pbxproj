@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362719730117B5B4C9894478 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42102F2B370BCE926A31E6 /* AppView.swift */; };
+		39A93AD4B46AED66B6753161 /* SimpleContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A28E4F6138379BA0F7247 /* SimpleContactsUITests.swift */; };
+		5B88BF934812FEEEECF868A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93BBFFE2FCF390065B569F0 /* Foundation.framework */; };
+		7EFF782A35F0F9A9AA7167A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93BBFFE2FCF390065B569F0 /* Foundation.framework */; };
+		81C80451A8F13B189CC40B44 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3F27C314FF16C5B953BB0 /* Person.swift */; };
+		8C459BAD715BACEF16BE4B9D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2253E1425D9FCA6524CA6CB3 /* PersonTests.swift */; };
+		A8C8154CCC57935222492BEE /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133ADE0D2BAA63DC09EE5A3E /* EditPersonView.swift */; };
+		B1141488A6251CF2F2B763D9 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3014A5C8F8A4E4375CA3C883 /* PeopleView.swift */; };
+		DEC2DE66FB5F7754CF87AA6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93BBFFE2FCF390065B569F0 /* Foundation.framework */; };
+		FE855010311908AE5B02B22D /* SimpleContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF87D00659C5150A88F387 /* SimpleContactsApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		689E6EEC8579E4CDFDA815A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71746475B5D58FA68A0B0189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E1411372CCAEA74F188D18;
+			remoteInfo = SimpleContacts;
+		};
+		88918C212FD0872AFB98AEE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71746475B5D58FA68A0B0189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E1411372CCAEA74F188D18;
+			remoteInfo = SimpleContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043A28E4F6138379BA0F7247 /* SimpleContactsUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleContactsUITests.swift; sourceTree = "<group>"; };
+		133ADE0D2BAA63DC09EE5A3E /* EditPersonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
+		2253E1425D9FCA6524CA6CB3 /* PersonTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		27CF87D00659C5150A88F387 /* SimpleContactsApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleContactsApp.swift; sourceTree = "<group>"; };
+		2B361D3C3F6DB66A86486F56 /* SimpleContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3014A5C8F8A4E4375CA3C883 /* PeopleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		BEB3FAF975BF03D5C5086F9F /* SimpleContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5BEA531A75A9B406A0FE0FE /* SimpleContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD42102F2B370BCE926A31E6 /* AppView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		D9E3F27C314FF16C5B953BB0 /* Person.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F93BBFFE2FCF390065B569F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		053465A2CA298DE2D8BDD876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFF782A35F0F9A9AA7167A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F6E200ABDA8DDE09A1FB79D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B88BF934812FEEEECF868A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A190769AE44B2E9A191A9246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC2DE66FB5F7754CF87AA6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		205C1D418A1C309A0B906A15 = {
+			isa = PBXGroup;
+			children = (
+				6D5CED630C6BEB85C7900849 /* Products */,
+				BA9886F7D6EAA64FAB5D92F9 /* Frameworks */,
+				74C825CD4EB7C7DCAC6EC342 /* SimpleContacts */,
+				301356106786BB5B2ABA47D3 /* SimpleContactsTests */,
+				F5FAC446C7160706B02A687C /* SimpleContactsUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		301356106786BB5B2ABA47D3 /* SimpleContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2253E1425D9FCA6524CA6CB3 /* PersonTests.swift */,
+			);
+			name = SimpleContactsTests;
+			path = SimpleContactsTests;
+			sourceTree = "<group>";
+		};
+		348CE2A15E67D7E2BFA7DF0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9E3F27C314FF16C5B953BB0 /* Person.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D5CED630C6BEB85C7900849 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEA531A75A9B406A0FE0FE /* SimpleContacts.app */,
+				BEB3FAF975BF03D5C5086F9F /* SimpleContactsTests.xctest */,
+				2B361D3C3F6DB66A86486F56 /* SimpleContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74C825CD4EB7C7DCAC6EC342 /* SimpleContacts */ = {
+			isa = PBXGroup;
+			children = (
+				348CE2A15E67D7E2BFA7DF0A /* Models */,
+				27CF87D00659C5150A88F387 /* SimpleContactsApp.swift */,
+				7B55AAD401C2B985DF23D202 /* Views */,
+			);
+			name = SimpleContacts;
+			path = SimpleContacts;
+			sourceTree = "<group>";
+		};
+		7B55AAD401C2B985DF23D202 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD42102F2B370BCE926A31E6 /* AppView.swift */,
+				133ADE0D2BAA63DC09EE5A3E /* EditPersonView.swift */,
+				3014A5C8F8A4E4375CA3C883 /* PeopleView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA9886F7D6EAA64FAB5D92F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4FEDA69D9529DAB2488130C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4FEDA69D9529DAB2488130C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F93BBFFE2FCF390065B569F0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5FAC446C7160706B02A687C /* SimpleContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				043A28E4F6138379BA0F7247 /* SimpleContactsUITests.swift */,
+			);
+			name = SimpleContactsUITests;
+			path = SimpleContactsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B4446238D5681E129A372E7 /* SimpleContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33805B39B9684F0CD3100723 /* Build configuration list for PBXNativeTarget "SimpleContactsUITests" */;
+			buildPhases = (
+				FA479CD0B1542FC7376EB04C /* Sources */,
+				053465A2CA298DE2D8BDD876 /* Frameworks */,
+				35FD5BBE15AFA9C4E380E4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46C05E5753553D61CC3FEF3 /* PBXTargetDependency */,
+			);
+			name = SimpleContactsUITests;
+			productName = SimpleContactsUITests;
+			productReference = 2B361D3C3F6DB66A86486F56 /* SimpleContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D3E1411372CCAEA74F188D18 /* SimpleContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC83DF57155F2C18CF5A861C /* Build configuration list for PBXNativeTarget "SimpleContacts" */;
+			buildPhases = (
+				934FF150F1A46F81561F7F77 /* Sources */,
+				2F6E200ABDA8DDE09A1FB79D /* Frameworks */,
+				FFC6D5CA71B0AC5C1F98E743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleContacts;
+			productName = SimpleContacts;
+			productReference = C5BEA531A75A9B406A0FE0FE /* SimpleContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF67085F562EC655E2A624DF /* SimpleContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFDEEB63F3884C3EDFC629D /* Build configuration list for PBXNativeTarget "SimpleContactsTests" */;
+			buildPhases = (
+				631F8B0E9F534CDEA480447F /* Sources */,
+				A190769AE44B2E9A191A9246 /* Frameworks */,
+				36F3556DC49CF67899249F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D28FDEBF232395532D2FAABD /* PBXTargetDependency */,
+			);
+			name = SimpleContactsTests;
+			productName = SimpleContactsTests;
+			productReference = BEB3FAF975BF03D5C5086F9F /* SimpleContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71746475B5D58FA68A0B0189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0B4446238D5681E129A372E7 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D3E1411372CCAEA74F188D18;
+					};
+					D3E1411372CCAEA74F188D18 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					DF67085F562EC655E2A624DF = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D3E1411372CCAEA74F188D18;
+					};
+				};
+			};
+			buildConfigurationList = 7B8E2B0E012BC6E0F6ACA2FC /* Build configuration list for PBXProject "SimpleContacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 205C1D418A1C309A0B906A15;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 100;
+			productRefGroup = 6D5CED630C6BEB85C7900849 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3E1411372CCAEA74F188D18 /* SimpleContacts */,
+				DF67085F562EC655E2A624DF /* SimpleContactsTests */,
+				0B4446238D5681E129A372E7 /* SimpleContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35FD5BBE15AFA9C4E380E4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F3556DC49CF67899249F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC6D5CA71B0AC5C1F98E743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		631F8B0E9F534CDEA480447F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C459BAD715BACEF16BE4B9D /* PersonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934FF150F1A46F81561F7F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C80451A8F13B189CC40B44 /* Person.swift in Sources */,
+				FE855010311908AE5B02B22D /* SimpleContactsApp.swift in Sources */,
+				362719730117B5B4C9894478 /* AppView.swift in Sources */,
+				A8C8154CCC57935222492BEE /* EditPersonView.swift in Sources */,
+				B1141488A6251CF2F2B763D9 /* PeopleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA479CD0B1542FC7376EB04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A93AD4B46AED66B6753161 /* SimpleContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D28FDEBF232395532D2FAABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleContacts;
+			target = D3E1411372CCAEA74F188D18 /* SimpleContacts */;
+			targetProxy = 689E6EEC8579E4CDFDA815A4 /* PBXContainerItemProxy */;
+		};
+		D46C05E5753553D61CC3FEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleContacts;
+			target = D3E1411372CCAEA74F188D18 /* SimpleContacts */;
+			targetProxy = 88918C212FD0872AFB98AEE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07DC779A600E8103E3898993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		134674D942325DCAD5117E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleContacts;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SimpleContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2D7F8FF1B0341499A08765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SimpleContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SimpleContacts;
+			};
+			name = Debug;
+		};
+		61F246BDA773A1511C85ACEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SimpleContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SimpleContacts;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D01B7EC8AF2B7A77C8E7CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SimpleContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleContacts";
+				TEST_TARGET_NAME = SimpleContacts;
+			};
+			name = Debug;
+		};
+		9437796E2F203740482C3A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SimpleContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleContacts";
+				TEST_TARGET_NAME = SimpleContacts;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A829BAC84AE5D5DFE2620C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleContacts;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.SimpleContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F75D439D418BCB4FF0788200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33805B39B9684F0CD3100723 /* Build configuration list for PBXNativeTarget "SimpleContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F246BDA773A1511C85ACEB /* Release */,
+				2C2D7F8FF1B0341499A08765 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B8E2B0E012BC6E0F6ACA2FC /* Build configuration list for PBXProject "SimpleContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DC779A600E8103E3898993 /* Debug */,
+				F75D439D418BCB4FF0788200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC83DF57155F2C18CF5A861C /* Build configuration list for PBXNativeTarget "SimpleContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134674D942325DCAD5117E33 /* Release */,
+				A829BAC84AE5D5DFE2620C9E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFDEEB63F3884C3EDFC629D /* Build configuration list for PBXNativeTarget "SimpleContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9437796E2F203740482C3A45 /* Release */,
+				6D01B7EC8AF2B7A77C8E7CDA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71746475B5D58FA68A0B0189 /* Project object */;
+}
