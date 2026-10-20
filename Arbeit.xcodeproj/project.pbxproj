@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A65B541FE8632E4628B640F /* TaskItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE01623438D1EA065E65D97 /* TaskItemTests.swift */; };
+		32309BFA9EAFC2D03C1DBA05 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 937EB1744EA985ADBEFFE6AE /* FirebaseFirestore */; };
+		40FBF6195C8F130509616954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B91F9F7759FABF4ED520CA /* Assets.xcassets */; };
+		738EA6255D39B59F66801706 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CCD37DD86C6A46E5E21E30 /* TaskRepository.swift */; };
+		93B483191BD0B08C073B4B84 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E805B042077540BF1EF8004 /* TaskRowView.swift */; };
+		9EED09DAD9CA882A9CA03E6D /* TaskDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E93EB65EB628918A686100 /* TaskDetailsView.swift */; };
+		B13601D263AEBF1644113862 /* ArbeitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51099585410451E8BE2E7AC3 /* ArbeitApp.swift */; };
+		B52E6EAC8928360F3E7D8552 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E87C1F2A69B5CD30F4B5E57 /* TasksView.swift */; };
+		CBB13FCA63289AF803459A89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF072154A049105EEF00D57 /* GoogleService-Info.plist */; };
+		D4E04FBB836355AAB47C95F3 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4C6EA85E6CBD454C5C761 /* TaskItem.swift */; };
+		D7AAC043E0D17309C88E5B02 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B2A428B6EAC594DBB3A9C /* AppView.swift */; };
+		FDE257A500F3B74FBFFA7FBE /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA911280FF0C9A8FCA2105 /* TasksViewModel.swift */; };
+		FE9593A54A1558CFCD5AF6FF /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8EA0C4B5E6178BB367233 /* NewTaskView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		730F6771666F69470A1590B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E766F3872947548168FF3D70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD73A0222E2F79D6DE674CC;
+			remoteInfo = Arbeit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF072154A049105EEF00D57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E87C1F2A69B5CD30F4B5E57 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		24DA911280FF0C9A8FCA2105 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
+		26CCD37DD86C6A46E5E21E30 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		4DF8EA0C4B5E6178BB367233 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		51099585410451E8BE2E7AC3 /* ArbeitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbeitApp.swift; sourceTree = "<group>"; };
+		5AAEBEFCE3B107D5C4E2A8AF /* ArbeitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ArbeitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E805B042077540BF1EF8004 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		68B91F9F7759FABF4ED520CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		768B2A428B6EAC594DBB3A9C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		89E93EB65EB628918A686100 /* TaskDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsView.swift; sourceTree = "<group>"; };
+		97001A409295397B9FD83CD1 /* Arbeit.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Arbeit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA4C6EA85E6CBD454C5C761 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		DFE01623438D1EA065E65D97 /* TaskItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F30A6D131AD681F46FE73B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32309BFA9EAFC2D03C1DBA05 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD84DD8ABF16EADC701091B /* Arbeit */ = {
+			isa = PBXGroup;
+			children = (
+				51099585410451E8BE2E7AC3 /* ArbeitApp.swift */,
+				68B91F9F7759FABF4ED520CA /* Assets.xcassets */,
+				0CF072154A049105EEF00D57 /* GoogleService-Info.plist */,
+				256DCB3B1A618041554DA88E /* DataRepositories */,
+				0B504655B4474209CD06B9B0 /* Models */,
+				1A30CD2AB5C21EA0C328DE1C /* ViewModels */,
+				84FFFFE3C9496BD4D30EA7E0 /* Views */,
+			);
+			path = Arbeit;
+			sourceTree = "<group>";
+		};
+		0B504655B4474209CD06B9B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4C6EA85E6CBD454C5C761 /* TaskItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		190630595DF8F5C9500D0481 = {
+			isa = PBXGroup;
+			children = (
+				0AD84DD8ABF16EADC701091B /* Arbeit */,
+				A32BE6AB2D65EDFF11311286 /* ArbeitTests */,
+				3991010AC01ACC669C5B15C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A30CD2AB5C21EA0C328DE1C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				24DA911280FF0C9A8FCA2105 /* TasksViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		256DCB3B1A618041554DA88E /* DataRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				26CCD37DD86C6A46E5E21E30 /* TaskRepository.swift */,
+			);
+			path = DataRepositories;
+			sourceTree = "<group>";
+		};
+		3991010AC01ACC669C5B15C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97001A409295397B9FD83CD1 /* Arbeit.app */,
+				5AAEBEFCE3B107D5C4E2A8AF /* ArbeitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FFFFE3C9496BD4D30EA7E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				768B2A428B6EAC594DBB3A9C /* AppView.swift */,
+				4DF8EA0C4B5E6178BB367233 /* NewTaskView.swift */,
+				89E93EB65EB628918A686100 /* TaskDetailsView.swift */,
+				5E805B042077540BF1EF8004 /* TaskRowView.swift */,
+				0E87C1F2A69B5CD30F4B5E57 /* TasksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A32BE6AB2D65EDFF11311286 /* ArbeitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE01623438D1EA065E65D97 /* TaskItemTests.swift */,
+			);
+			path = ArbeitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67FA536BE6C9CE52B6349D78 /* ArbeitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18395A2336713554A8CC78F /* Build configuration list for PBXNativeTarget "ArbeitTests" */;
+			buildPhases = (
+				6936B13CFBA7E51FB11DBD7C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F52E231DB65D871F9E23CD /* PBXTargetDependency */,
+			);
+			name = ArbeitTests;
+			packageProductDependencies = (
+			);
+			productName = ArbeitTests;
+			productReference = 5AAEBEFCE3B107D5C4E2A8AF /* ArbeitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AD73A0222E2F79D6DE674CC /* Arbeit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC676A9C2F4D17DE5EEA9BC /* Build configuration list for PBXNativeTarget "Arbeit" */;
+			buildPhases = (
+				7B9BD79BA3DF20C40303032E /* Sources */,
+				A9B115C6426AD96FF127034F /* Resources */,
+				D1F30A6D131AD681F46FE73B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arbeit;
+			packageProductDependencies = (
+				937EB1744EA985ADBEFFE6AE /* FirebaseFirestore */,
+			);
+			productName = Arbeit;
+			productReference = 97001A409295397B9FD83CD1 /* Arbeit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E766F3872947548168FF3D70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9AD73A0222E2F79D6DE674CC = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD9A1BAE11DA2C42A31A7A81 /* Build configuration list for PBXProject "Arbeit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 190630595DF8F5C9500D0481;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ACC2EFD6F7714BDC17E47F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3991010AC01ACC669C5B15C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AD73A0222E2F79D6DE674CC /* Arbeit */,
+				67FA536BE6C9CE52B6349D78 /* ArbeitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B115C6426AD96FF127034F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FBF6195C8F130509616954 /* Assets.xcassets in Resources */,
+				CBB13FCA63289AF803459A89 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6936B13CFBA7E51FB11DBD7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A65B541FE8632E4628B640F /* TaskItemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9BD79BA3DF20C40303032E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AAC043E0D17309C88E5B02 /* AppView.swift in Sources */,
+				B13601D263AEBF1644113862 /* ArbeitApp.swift in Sources */,
+				FE9593A54A1558CFCD5AF6FF /* NewTaskView.swift in Sources */,
+				9EED09DAD9CA882A9CA03E6D /* TaskDetailsView.swift in Sources */,
+				D4E04FBB836355AAB47C95F3 /* TaskItem.swift in Sources */,
+				738EA6255D39B59F66801706 /* TaskRepository.swift in Sources */,
+				93B483191BD0B08C073B4B84 /* TaskRowView.swift in Sources */,
+				B52E6EAC8928360F3E7D8552 /* TasksView.swift in Sources */,
+				FDE257A500F3B74FBFFA7FBE /* TasksViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14F52E231DB65D871F9E23CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD73A0222E2F79D6DE674CC /* Arbeit */;
+			targetProxy = 730F6771666F69470A1590B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37CB57AE4A067A1D42F24D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.ArbeitTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arbeit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arbeit";
+			};
+			name = Debug;
+		};
+		560B7FE96101889C784FFB8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.ArbeitTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arbeit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arbeit";
+			};
+			name = Release;
+		};
+		AF434BC5ABD8EA938721C59B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B0A98FBBC97D84DBCA1CB0A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.Arbeit;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E21F64A37A199639A7213E67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.Arbeit;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F52CC96DF3B57FB0E6743729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DC676A9C2F4D17DE5EEA9BC /* Build configuration list for PBXNativeTarget "Arbeit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A98FBBC97D84DBCA1CB0A0 /* Debug */,
+				E21F64A37A199639A7213E67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A18395A2336713554A8CC78F /* Build configuration list for PBXNativeTarget "ArbeitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CB57AE4A067A1D42F24D55 /* Debug */,
+				560B7FE96101889C784FFB8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD9A1BAE11DA2C42A31A7A81 /* Build configuration list for PBXProject "Arbeit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF434BC5ABD8EA938721C59B /* Debug */,
+				F52CC96DF3B57FB0E6743729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACC2EFD6F7714BDC17E47F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		937EB1744EA985ADBEFFE6AE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACC2EFD6F7714BDC17E47F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E766F3872947548168FF3D70 /* Project object */;
+}
