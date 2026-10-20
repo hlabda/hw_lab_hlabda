@@ -30,11 +30,3 @@ The code is organized into `Models/TaskItem.swift`, `DataRepositories/TaskReposi
 Press Command-U in Xcode. `ArbeitTests/TaskItemTests.swift` contains the five Swift Testing tests for validation, equality, and sorting. They do not need Firebase.
 
 Verified on iPhone 17 Pro with iOS 26.5: **5 tests passed, 0 failed**.
-
-## Submission
-
-- Platform: **Swift**
-- Repository: <https://github.com/hlabda/hw_lab_hlabda>
-- Branch: `hw_lab7_Arbeit`
-- Lab branch: <https://github.com/hlabda/hw_lab_hlabda/tree/hw_lab7_Arbeit>
-- Screenshots: kept locally and submitted separately through Canvas; excluded from GitHub.
