@@ -6,6 +6,8 @@ import Foundation
 @MainActor
 struct TaskItemTests {
 
+  /// A fixed date shared by every sample. Using Date() instead would give each sample a
+  /// slightly different time, and the equality test would fail for the wrong reason.
   private static let fixedDate = Date(timeIntervalSince1970: 1_700_000_000)
 
   /// Builds a sample task. Every sample shares the same fixed dates so two samples compare equal.
@@ -38,6 +40,7 @@ struct TaskItemTests {
 
   /// Tasks with the same name, assignee and due date are equal even if their IDs and completion differ.
   @Test func equalityIgnoresIdAndCompletion() {
+    // Two samples with identical fields, then give them different IDs and completion.
     var a = sample()
     var b = sample()
     a.id = "abc"
@@ -51,6 +54,7 @@ struct TaskItemTests {
     let apple = sample(name: "Apple")
     let banana = sample(name: "Banana")
     let cherry = sample(name: "Cherry")
+    // Start out of order; .sorted() uses TaskItem's < to put them in name order.
     let sorted = [cherry, apple, banana].sorted()
     #expect(sorted.map(\.name) == ["Apple", "Banana", "Cherry"])
   }

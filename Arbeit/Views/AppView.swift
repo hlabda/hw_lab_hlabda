@@ -2,11 +2,14 @@ import SwiftUI
 
 /// The root view: owns the shared TasksViewModel and shows the Tasks and New Task tabs.
 struct AppView: View {
+  /// The one view model for the whole app. @State keeps the same instance
+  /// alive while the app runs, instead of creating a new one on every redraw.
   @State private var tasksViewModel = TasksViewModel()
 
   /// Builds the two tabs, each in its own navigation stack, and injects the view model into both.
   var body: some View {
     TabView {
+      // First tab: the task list. Its own NavigationStack lets it push the details screen.
       NavigationStack {
         TasksView()
       }
@@ -15,6 +18,7 @@ struct AppView: View {
         Text("Tasks")
       }
 
+      // Second tab: the New Task form, with its own title bar.
       NavigationStack {
         NewTaskView()
       }
@@ -23,6 +27,7 @@ struct AppView: View {
         Text("New Task")
       }
     }
+    // Makes the view model available to every view inside both tabs.
     .environment(tasksViewModel)
   }
 }
