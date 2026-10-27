@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F8920A990C7A63605C4F71 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FD691DEFCD1BC804E803E /* LocationManagerTests.swift */; };
+		2C107D7C064036350E874F82 /* CarCoordinateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB462C1D905AD8B817C114E /* CarCoordinateTests.swift */; };
+		52FC75AEFCE9032297647085 /* CarLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE72FC6CF095749C7B59883D /* CarLocation.swift */; };
+		5EED9ADE02424BCF63A66C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE79212E250DE28BE10EA41 /* Assets.xcassets */; };
+		61A26654E0436AA19BC6D23A /* CarCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B33B9FC54CCB017900EF3 /* CarCoordinate.swift */; };
+		740DAB40B11CEF27D6121D73 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BEB2D7C7143B87632A898 /* LocationManager.swift */; };
+		92FB1B5DF5571A00D4176ECD /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDAF32C4C0A634726D5488B /* AppView.swift */; };
+		AC1F7DFC00F678EC580A8551 /* FindMyCarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06CBBC0EF37EA61850B28E /* FindMyCarApp.swift */; };
+		E7295C0965CF129BD74CDEE0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F8CBC3D1B2F03B752C2E8 /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1736EF4352CA25F9835BF01C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0ACE95EC4A228C748F86EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2921AD8C80690F4E9F9BBD24;
+			remoteInfo = FindMyCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EE79212E250DE28BE10EA41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CDAF32C4C0A634726D5488B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		430BEB2D7C7143B87632A898 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9AF9DB4D22BA54BB3E870C08 /* FindMyCarTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FindMyCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3FD691DEFCD1BC804E803E /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		A88B33B9FC54CCB017900EF3 /* CarCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCoordinate.swift; sourceTree = "<group>"; };
+		AA8C60D02B712A9418CB4529 /* FindMyCar.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FindMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE72FC6CF095749C7B59883D /* CarLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarLocation.swift; sourceTree = "<group>"; };
+		C67F8CBC3D1B2F03B752C2E8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ECB462C1D905AD8B817C114E /* CarCoordinateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCoordinateTests.swift; sourceTree = "<group>"; };
+		FD06CBBC0EF37EA61850B28E /* FindMyCarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCarApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D65B0BC8ECA24EFA2D0FEA0 /* FindMyCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECB462C1D905AD8B817C114E /* CarCoordinateTests.swift */,
+				9B3FD691DEFCD1BC804E803E /* LocationManagerTests.swift */,
+			);
+			path = FindMyCarTests;
+			sourceTree = "<group>";
+		};
+		26731B91F22972017F83EC06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CDAF32C4C0A634726D5488B /* AppView.swift */,
+				C67F8CBC3D1B2F03B752C2E8 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		340EA6C1BB0CAD8C2FC90E40 /* FindMyCar */ = {
+			isa = PBXGroup;
+			children = (
+				2EE79212E250DE28BE10EA41 /* Assets.xcassets */,
+				FD06CBBC0EF37EA61850B28E /* FindMyCarApp.swift */,
+				4503AF682B42BD7E5202F332 /* Models */,
+				26731B91F22972017F83EC06 /* Views */,
+			);
+			path = FindMyCar;
+			sourceTree = "<group>";
+		};
+		4503AF682B42BD7E5202F332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A88B33B9FC54CCB017900EF3 /* CarCoordinate.swift */,
+				AE72FC6CF095749C7B59883D /* CarLocation.swift */,
+				430BEB2D7C7143B87632A898 /* LocationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		762873E273852221FEAFF2CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8C60D02B712A9418CB4529 /* FindMyCar.app */,
+				9AF9DB4D22BA54BB3E870C08 /* FindMyCarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F34F815809B80F915BD5A0FC = {
+			isa = PBXGroup;
+			children = (
+				340EA6C1BB0CAD8C2FC90E40 /* FindMyCar */,
+				0D65B0BC8ECA24EFA2D0FEA0 /* FindMyCarTests */,
+				762873E273852221FEAFF2CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2921AD8C80690F4E9F9BBD24 /* FindMyCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C25A15966172E6EEB68C89 /* Build configuration list for PBXNativeTarget "FindMyCar" */;
+			buildPhases = (
+				96F028998A15C7E4BFE4D2B5 /* Sources */,
+				5D9D6328967BF83E9FC9D7B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyCar;
+			packageProductDependencies = (
+			);
+			productName = FindMyCar;
+			productReference = AA8C60D02B712A9418CB4529 /* FindMyCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F42E046F3BFF7BC2E0708175 /* FindMyCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE80DD6B7082E941DBF48056 /* Build configuration list for PBXNativeTarget "FindMyCarTests" */;
+			buildPhases = (
+				CE70EF57DF422B52A3C1BF50 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2ECC64C98AE8FA6738C8B25 /* PBXTargetDependency */,
+			);
+			name = FindMyCarTests;
+			packageProductDependencies = (
+			);
+			productName = FindMyCarTests;
+			productReference = 9AF9DB4D22BA54BB3E870C08 /* FindMyCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0ACE95EC4A228C748F86EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2921AD8C80690F4E9F9BBD24 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B92CCBB2A9E829D343032374 /* Build configuration list for PBXProject "FindMyCar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F34F815809B80F915BD5A0FC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 762873E273852221FEAFF2CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2921AD8C80690F4E9F9BBD24 /* FindMyCar */,
+				F42E046F3BFF7BC2E0708175 /* FindMyCarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D9D6328967BF83E9FC9D7B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EED9ADE02424BCF63A66C4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96F028998A15C7E4BFE4D2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FB1B5DF5571A00D4176ECD /* AppView.swift in Sources */,
+				61A26654E0436AA19BC6D23A /* CarCoordinate.swift in Sources */,
+				52FC75AEFCE9032297647085 /* CarLocation.swift in Sources */,
+				AC1F7DFC00F678EC580A8551 /* FindMyCarApp.swift in Sources */,
+				740DAB40B11CEF27D6121D73 /* LocationManager.swift in Sources */,
+				E7295C0965CF129BD74CDEE0 /* MapView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE70EF57DF422B52A3C1BF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C107D7C064036350E874F82 /* CarCoordinateTests.swift in Sources */,
+				12F8920A990C7A63605C4F71 /* LocationManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2ECC64C98AE8FA6738C8B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2921AD8C80690F4E9F9BBD24 /* FindMyCar */;
+			targetProxy = 1736EF4352CA25F9835BF01C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D10AA3977820060F0FE18A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to save where you parked the car.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.FindMyCar;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2BB11906F0659FCF1CF6B4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		405F1B307E6B2644EC2E0473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		929DBC6BE3E23A3D5B90EEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.FindMyCarTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyCar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyCar";
+			};
+			name = Release;
+		};
+		A38956EB90AE4E5840B4D6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to save where you parked the car.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.FindMyCar;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C4EED400FDD137BA96FD5BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cmu.hlabda.FindMyCarTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyCar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyCar";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C25A15966172E6EEB68C89 /* Build configuration list for PBXNativeTarget "FindMyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D10AA3977820060F0FE18A1 /* Debug */,
+				A38956EB90AE4E5840B4D6F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B92CCBB2A9E829D343032374 /* Build configuration list for PBXProject "FindMyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB11906F0659FCF1CF6B4F0 /* Debug */,
+				405F1B307E6B2644EC2E0473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE80DD6B7082E941DBF48056 /* Build configuration list for PBXNativeTarget "FindMyCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EED400FDD137BA96FD5BED /* Debug */,
+				929DBC6BE3E23A3D5B90EEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0ACE95EC4A228C748F86EA /* Project object */;
+}
