@@ -9,11 +9,13 @@ class LocationManager: NSObject {
   var coordinate = CarCoordinate()
   var authorizationStatus: CLAuthorizationStatus = .notDetermined
   var locationError: String?
+  private(set) var isSavingLocation = false
 
   // MARK: - Private Properties
   @ObservationIgnored private let locationManager = CLLocationManager()
   @ObservationIgnored private let plistFileName = "Coordinates.plist"
   @ObservationIgnored private var locationSaveCompletion: (() -> Void)?
+  @ObservationIgnored private var locationTimeout: Timer?
 
   // MARK: - Initialization
 
@@ -31,6 +33,8 @@ class LocationManager: NSObject {
 
   // Requests location permissions and gets current location
   func saveCurrentLocation(completion: @escaping () -> Void = {}) {
+    guard !isSavingLocation else { return }
+    isSavingLocation = true
     // Clear any previous errors
     locationError = nil
     // Store completion handler to call after location is saved
@@ -41,16 +45,11 @@ class LocationManager: NSObject {
     case .notDetermined:
       locationManager.requestWhenInUseAuthorization()
     case .restricted, .denied:
-      locationError = "Location access denied. Please enable in Settings."
-      locationSaveCompletion?()
-      locationSaveCompletion = nil
-      return
+      finishLocationRequest(error: "Location access denied. Enable location access for FindMyCar in Settings.")
     case .authorizedWhenInUse, .authorizedAlways:
       startLocationUpdates()
     @unknown default:
-      locationError = "Unknown authorization status"
-      locationSaveCompletion?()
-      locationSaveCompletion = nil
+      finishLocationRequest(error: "Unable to check location permission. Please try again.")
     }
   }
 
@@ -94,13 +93,30 @@ class LocationManager: NSObject {
 
   // MARK: - Private Helper Methods
 
-  // Starts asking Core Location for position updates, if location services are on
+  /// Starts position updates for a pending save and bounds the wait for a GPS fix.
   private func startLocationUpdates() {
-    guard CLLocationManager.locationServicesEnabled() else {
-      locationError = "Location services are disabled"
-      return
+    guard isSavingLocation else { return }
+    locationTimeout?.invalidate()
+    locationTimeout = Timer.scheduledTimer(withTimeInterval: 15, repeats: false) { [weak self] _ in
+      #if targetEnvironment(simulator)
+      self?.finishLocationRequest(error: "No simulated location is available. Run from Xcode with the CMU location selected, or set a custom simulator location, then try again.")
+      #else
+      self?.finishLocationRequest(error: "Unable to get your location. Check that Location Services are enabled in Settings, move to an open area, and try again.")
+      #endif
     }
     locationManager.startUpdatingLocation()
+  }
+
+  /// Stops a save request and reports its result exactly once to the home screen.
+  private func finishLocationRequest(error: String? = nil) {
+    locationManager.stopUpdatingLocation()
+    locationTimeout?.invalidate()
+    locationTimeout = nil
+    locationError = error
+    isSavingLocation = false
+    let completion = locationSaveCompletion
+    locationSaveCompletion = nil
+    completion?()
   }
 
   // Returns the URL for the plist file in the documents directory
@@ -115,15 +131,26 @@ extension LocationManager: CLLocationManagerDelegate {
   // Called when the user grants or changes location permission
   func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
     authorizationStatus = manager.authorizationStatus
-    // If authorized, start getting location
-    if authorizationStatus == .authorizedWhenInUse || authorizationStatus == .authorizedAlways {
+    // Only a user-requested save may change the parked location.
+    guard isSavingLocation else { return }
+    switch authorizationStatus {
+    case .authorizedWhenInUse, .authorizedAlways:
       startLocationUpdates()
+    case .denied, .restricted:
+      finishLocationRequest(error: "Location access denied. Enable location access for FindMyCar in Settings.")
+    case .notDetermined:
+      break
+    @unknown default:
+      finishLocationRequest(error: "Unable to check location permission. Please try again.")
     }
   }
 
   // Called with new positions; saves the latest one as the car's location
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    guard let location = locations.last else { return }
+    guard isSavingLocation,
+          let location = locations.last,
+          location.horizontalAccuracy >= 0,
+          CLLocationCoordinate2DIsValid(location.coordinate) else { return }
     // Update coordinate
     coordinate = CarCoordinate(
       latitude: location.coordinate.latitude,
@@ -131,19 +158,20 @@ extension LocationManager: CLLocationManagerDelegate {
     )
     // Save to plist
     saveLocationToPlist()
-    // Stop updating to conserve battery
-    locationManager.stopUpdatingLocation()
-    // Call completion handler after location is saved
-    locationSaveCompletion?()
-    locationSaveCompletion = nil
+    finishLocationRequest(error: locationError)
   }
 
   // Called when Core Location cannot get a position; reports the error to the UI
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-    locationError = "Failed to get location: \(error.localizedDescription)"
-    locationManager.stopUpdatingLocation()
-    // Call completion handler even on error so UI can respond
-    locationSaveCompletion?()
-    locationSaveCompletion = nil
+    guard isSavingLocation else { return }
+    // A temporary missing GPS fix is retried until a position arrives or the timeout expires.
+    if let locationError = error as? CLError {
+      if locationError.code == .locationUnknown { return }
+      if locationError.code == .denied {
+        finishLocationRequest(error: "Location access denied. Enable Location Services and location access for FindMyCar in Settings.")
+        return
+      }
+    }
+    finishLocationRequest(error: "Failed to get location: \(error.localizedDescription)")
   }
 }

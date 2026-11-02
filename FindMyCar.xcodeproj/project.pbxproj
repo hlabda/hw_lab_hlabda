@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A57C0010A57C0010A57C001 /* CMU.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CMU.gpx; sourceTree = "<group>"; };
 		2EE79212E250DE28BE10EA41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CDAF32C4C0A634726D5488B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		430BEB2D7C7143B87632A898 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		F34F815809B80F915BD5A0FC = {
 			isa = PBXGroup;
 			children = (
+				0A57C0010A57C0010A57C001 /* CMU.gpx */,
 				340EA6C1BB0CAD8C2FC90E40 /* FindMyCar */,
 				0D65B0BC8ECA24EFA2D0FEA0 /* FindMyCarTests */,
 				762873E273852221FEAFF2CB /* Products */,

@@ -5,7 +5,6 @@ struct AppView: View {
   // MARK: - Properties
   @State private var locationManager = LocationManager()
   @State private var showingAlert = false
-  @State private var showingErrorAlert = false
 
   // MARK: - Body
 
@@ -33,11 +32,11 @@ struct AppView: View {
         // Save Location Button
         Button(action: {
           locationManager.saveCurrentLocation {
-            // Show alert only after location is saved
+            // Show one alert after the request finishes, using its success or error state.
             showingAlert = true
           }
         }) {
-          Label("Here's My Car", systemImage: "car.fill")
+          Label(locationManager.isSavingLocation ? "Getting Location…" : "Here's My Car", systemImage: "car.fill")
             .font(.headline)
             .foregroundColor(.white)
             .padding()
@@ -46,6 +45,7 @@ struct AppView: View {
             .cornerRadius(10)
         }
         .padding(.horizontal)
+        .disabled(locationManager.isSavingLocation)
 
         // Navigate to Map Button
         NavigationLink(destination: MapView(locationManager: locationManager)) {
@@ -63,23 +63,13 @@ struct AppView: View {
         Spacer()
       }
       .navigationBarTitleDisplayMode(.inline)
-      .alert("Location Saved", isPresented: $showingAlert) {
+      .alert(locationManager.locationError == nil ? "Location Saved" : "Location Error", isPresented: $showingAlert) {
         Button("OK", role: .cancel) { }
       } message: {
         if let error = locationManager.locationError {
           Text(error)
         } else {
           Text(generateLocationMessage())
-        }
-      }
-      .alert("Location Error", isPresented: $showingErrorAlert) {
-        Button("OK", role: .cancel) { }
-      } message: {
-        Text(locationManager.locationError ?? "Unknown error")
-      }
-      .onChange(of: locationManager.locationError) { _, newError in
-        if newError != nil && !showingAlert {
-          showingErrorAlert = true
         }
       }
     }
