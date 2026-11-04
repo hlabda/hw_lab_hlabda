@@ -4,8 +4,8 @@ EmojiHunter is a React Native camera game with five targets: laptop, phone, pen,
 
 ## Run
 
-1. Install Node.js 22.13+ or a newer supported LTS and run `npm ci`.
-2. Run `npm start` and open the project in Expo Go for SDK 57 on a phone.
+1. Use Node.js 22.13+ or 24.3+ within those LTS releases and run `npm ci`.
+2. Run `npm start` and open the project in Expo Go for SDK 58 on a phone.
 3. Allow rear camera access. Use a network connection for MobileNet's initial download. The game processes frames on the device; it does not upload photos.
 4. Point the camera at the target object. Select **Next emoji** after each result and **Play again** to restart.
 
