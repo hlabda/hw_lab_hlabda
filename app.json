@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "EmojiHunter",
+    "slug": "emoji-hunter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.cmu.emojiHunter"
+    },
+    "android": {
+      "package": "edu.cmu.emojihunter"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow EmojiHunter to use your camera to hunt for emoji objects.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
