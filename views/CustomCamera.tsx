@@ -25,6 +25,19 @@ async function loadClassifier() {
 
 /** Initializes and warms up MobileNet before starting the first timer. */
 async function initializeClassifier() {
+  // Hermes is neither a browser nor Node, so register its runtime primitives.
+  const environment = tf.env();
+  if (!environment.platform) {
+    environment.setPlatform('react-native', {
+      fetch: (path, init) => globalThis.fetch(path, init),
+      now: () => performance.now(),
+      encode: (value) => new TextEncoder().encode(value),
+      decode: (bytes, encoding) => new TextDecoder(encoding).decode(bytes),
+      isTypedArray: (value): value is Float32Array | Int32Array | Uint8Array | Uint8ClampedArray =>
+        value instanceof Float32Array || value instanceof Int32Array ||
+        value instanceof Uint8Array || value instanceof Uint8ClampedArray,
+    });
+  }
   await tf.setBackend('cpu');
   await tf.ready();
   return mobilenet.load({ version: 1, alpha: 0.5 });
@@ -34,6 +47,14 @@ async function initializeClassifier() {
 async function captureTensor(camera: CameraView) {
   const picture = await camera.takePictureAsync({ pictureRef: true, shutterSound: false });
   const context = ImageManipulator.manipulate(picture);
+  // Keep object proportions by cropping the middle of the frame before resizing.
+  const side = Math.min(picture.width, picture.height);
+  context.crop({
+    originX: Math.floor((picture.width - side) / 2),
+    originY: Math.floor((picture.height - side) / 2),
+    width: side,
+    height: side,
+  });
   context.resize({ width: 224, height: 224 });
   const resized = await context.renderAsync();
   const saved = await resized.saveAsync({ format: SaveFormat.JPEG });
@@ -163,6 +184,7 @@ export default function CustomCamera({ emojiNames, onEmojiFound, onRoundReady }:
           ref={camera}
           style={StyleSheet.absoluteFill}
           facing="back"
+          animateShutter={false}
           onCameraReady={markCameraReady}
           onMountError={reportCameraError}
         />
