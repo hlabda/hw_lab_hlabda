@@ -46,6 +46,16 @@ export class Player {
     return { left: this.x, right: this.x + this.width, top: this.y, bottom: this.y + this.height };
   }
 
+  /** Keep the current ship within the playfield when system insets or window size change. */
+  resize(width: number, height: number) {
+    this.x += (width - this.screenWidth) / 2;
+    this.screenWidth = width;
+    this.screenHeight = height;
+    const margin = Constants.Layout.leftBound;
+    this.x = Math.max(margin, Math.min(width - this.width - margin, this.x));
+    this.y = height - this.height - Constants.Player.bottomOffset;
+  }
+
   /** Hide the ship and disable firing after a hit. */
   kill() { this.isAlive = false; }
 

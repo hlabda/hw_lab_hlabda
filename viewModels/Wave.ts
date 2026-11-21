@@ -40,6 +40,16 @@ export class Wave {
     this.invaders = seedInvaders(game.currentLevel, width);
   }
 
+  /** Fit the live wave to the final layout without restarting the player's run. */
+  resize(width: number, height: number) {
+    const shift = (width - this.width) / 2;
+    for (const invader of this.invaders) invader.move(shift);
+    for (const shot of [...this.playerBullets, ...this.invaderBullets]) shot.x += shift;
+    this.player.resize(width, height);
+    this.width = width;
+    this.height = height;
+  }
+
   /** Fire from the player's nose when a tap meets the cooldown. */
   firePlayer() {
     if (this.outcome !== 'playing' || !this.player.canFire(this.elapsed)) return false;

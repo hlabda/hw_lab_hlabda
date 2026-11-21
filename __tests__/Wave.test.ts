@@ -95,3 +95,14 @@ test('clearing the third level ends the run with a cumulative score', () => {
   }
   expect(game.score).toBe(30);
 });
+
+// Android can report an initial size before its navigation-bar insets settle.
+test('a late layout change keeps the ship clear of system bars and preserves the wave', () => {
+  const wave = new Wave(390, 900);
+  const fleet = wave.invaders;
+  wave.firePlayer();
+  wave.resize(390, 780);
+  expect(wave.player.y + wave.player.height).toBe(780 - Constants.Player.bottomOffset);
+  expect(wave.invaders).toBe(fleet);
+  expect(wave.playerBullets).toHaveLength(1);
+});

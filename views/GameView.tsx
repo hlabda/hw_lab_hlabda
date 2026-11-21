@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { AppState, Image, Platform, StyleSheet, Text, View } from 'react-native';
 import type { LayoutChangeEvent } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Accelerometer } from 'expo-sensors';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Constants } from '../models/Constants';
@@ -38,6 +38,7 @@ function drawBullet(bullet: Bullet) {
 /** Connect the measured playfield, tilt input, and two timers to the active wave. */
 export default function GameView({ navigation }: Props) {
   const game = GameStateManager.instance;
+  const insets = useSafeAreaInsets();
   const waveRef = useRef<Wave | null>(null);
   const tilt = useRef(0);
   const foreground = useRef(AppState.currentState !== 'background');
@@ -45,10 +46,12 @@ export default function GameView({ navigation }: Props) {
   const [motionHint, setMotionHint] = useState('');
   const wave = waveRef.current;
 
-  /** Seed the wave once the safe area's playable dimensions are known. */
+  /** Keep entity coordinates aligned with the visible playfield as safe-area insets settle. */
   function measure(event: LayoutChangeEvent) {
     const { width, height } = event.nativeEvent.layout;
-    if (!waveRef.current && width > 0 && height > 0) {
+    if (width <= 0 || height <= 0) return;
+    if (waveRef.current) waveRef.current.resize(width, height);
+    else {
       waveRef.current = new Wave(width, height);
       setFrame(1);
     }
@@ -122,8 +125,8 @@ export default function GameView({ navigation }: Props) {
   }
 
   return (
-    <SafeAreaView style={styles.screen}>
-      <View style={styles.screen} onLayout={measure} onTouchStart={tap}>
+    <View style={styles.screen}>
+      <View style={[StyleSheet.absoluteFill, insets]} onLayout={measure} onTouchStart={tap}>
         <View style={styles.hud}>
           <Text style={styles.label}>Score: {game.score}</Text>
           <Text style={styles.label}>Level: {game.currentLevel}</Text>
@@ -135,7 +138,7 @@ export default function GameView({ navigation }: Props) {
         {wave?.invaderBullets.map(drawBullet)}
         {wave?.playerBullets.map(drawBullet)}
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
