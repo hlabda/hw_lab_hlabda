@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "SpaceDestroyersRN",
+    "slug": "space-destroyers-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      ["expo-sensors", { "motionPermission": "Tilt your phone to steer the ship." }],
+      ["expo-audio", { "microphonePermission": false, "recordAudioAndroid": false }]
+    ]
+  }
+}
